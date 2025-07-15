@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+a {
+    /* <a>タグの傍線の指定 */
+    text-decoration: none;
+}
+body {
+    /* 書体の指定 */
+    font-family: "hiragino Kaku Gothic ProN","Hiragino Sans","BIZ UDPGothic",sans-serif;
+    /* 行の高さ */
+    line-height: 1.7;
+    color: #432;
+}
+/* 上のバー */
+.font-english{
+    /* フォント：フィロソファー */
+    font-family: "Philosopher",sans-serif;
+    font-weight: bold;
+    background-color:chartreuse;
+}
+/* 見出し */
+.text-background {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-top: 2rem;
+  background:#ceff9a;
+}
+/* レイアウト */
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+.align-center {
+    text-align: center;
+}
+.page-header{
+    padding-top: .5rem;
+}
+/* ヘッダーカバー画像 */
+.logo{
+    /* ロゴの横幅の指定 */
+    width: 100px;
+}
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+    margin-bottom: 2rem;
+}
+.cover-tuki {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+    margin-bottom: 200px;
+}
+.cover-home {
+    background-image:url(images/ine.jpg);
+    height: 200px;
+}
+/* ヘッダー */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 2rem;
+    list-style: none;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.page-header{
+    padding-top: .5rem;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 2rem;
+  position: relative;
+  width: 250px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 8px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #ddd;
+}
+/* イベント情報 --------------------------------------------
+---------------------------------------------------------*/
+/* .event-shu {
+  margin-top: 20px;
+} */
+.grid {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-top: 2rem;
+}
+.item img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+    height: 200px;
+    width: 250px;
+}
+.item p {
+    font-size: .875rem;
+}
+.event-name {
+  font-size: .875rem;
+}
+.search {
+  font-size: 1.5rem;
+}
+/* ボタン */
+.btn {
+    /* 余白を含めたサイズを認識させるための記述 */
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    /* 角を丸めるプロパティ */
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    /* transition: .5s; */
+    transition: .5s;
+    margin-left:40px;
+    margin-bottom:20px;
+}
+/* ボタンにカーソルを重ねた時に適用される色 */
+.btn:hover {
+    background-color: #0090aa;
+    /* color: #ff0000; */
+    /* scale: 1.2; 縦横拡大する*/
+    /* rotate: -5deg; 右斜め上に5度回転*/
+    translate: 10px -12px;
+}
+.two-btn {
+  display: flex;
+  margin-top: 2rem;
+  margin-left:30%;
+}
+.item {
+  margin: left 2rem;;
+}
+.br {
+  margin: 2rem;
+}
+/* 月別イベント情報 -------------------------*/
+.tuki-btn {
+  display: flex;
+  margin-top: 2rem;
+  margin-left:300px;
+}
+/* ボタン */
+.btntu {
+    /* 余白を含めたサイズを認識させるための記述 */
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    /* 角を丸めるプロパティ */
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    /* transition: .5s; */
+    transition: .5s;
+    margin: 20px;
+}
+/* ボタンにカーソルを重ねた時に適用される色 */
+.btntu:hover {
+    background-color: #0090aa;
+    /* color: #ff0000; */
+    /* scale: 1.2; 縦横拡大する*/
+    /* rotate: -5deg; 右斜め上に5度回転*/
+    translate: 10px -12px;
+}
+/* SNS ---------------------------------------------
+--------------------------------*/
+.three-btn {
+  text-align: center;/*03-10*/
+  position: fixed;
+  right:0;
+  z-index: 1;
+  bottom: 200px;
+}
+.icon {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+/* ボタンsns */
+.btnsns {
+    /* 余白を含めたサイズを認識させるための記述 */
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    /* 角を丸めるプロパティ */
+    border-radius: 8px;
+    padding-top: 15px;
+    /* transition: .5s; */
+    transition: .5s;
+    margin: 20px;
+    width:55px;
+    height: 55px;
+}
+.btnsns:hover {
+    background-color: #0090aa;
+    /* color: #ff0000; */
+    /* scale: 1.2; 縦横拡大する*/
+    /* rotate: -5deg; 右斜め上に5度回転*/
+    translate: 10px -12px;
+}
+/* ポイント＆クーポンキャンペーン--------------------------
+------------------------------------------------------------------------- */
+/* 画像 */
+.pointcard {
+  width:600px;
+  height:300px;
+  text-align: center;
+}
+.QR {
+  width:300px;
+  height:300px;
+  text-align:center;
+}
+.barcode {
+  width: 300px;
+  height:100px;
+  margin-right: 100px;
+}
+.gridku {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    margin-top: .5rem;
+    margin-left:40%;
+}
+/* ボタンsns */
+.btnku {
+    /* 余白を含めたサイズを認識させるための記述 */
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    /* 角を丸めるプロパティ */
+    border-radius: 8px;
+    padding-top: 15px;
+    /* transition: .5s; */
+    transition: .5s;
+    margin: 20px;
+    size: auto;
+}
+.btnku:hover {
+    background-color: #0090aa;
+    /* color: #ff0000; */
+    /* scale: 1.2; 縦横拡大する*/
+    /* rotate: -5deg; 右斜め上に5度回転*/
+    translate: 10px -12px;
+}
+.ku-btn {
+  text-align: center;/*03-10*/
+  position: fixed;
+  right:0;
+  z-index: 1;
+  bottom: 200px;
+}
+/* 背景 */
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color:#C0FF5A;
+}
+
+.contents{
+    height: 100%;
+    background-color: #C0FF5A;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* gotoアイコン */
+.gotop {
+    text-align: center;/*03-10*/
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    bottom: 100px;
+}
