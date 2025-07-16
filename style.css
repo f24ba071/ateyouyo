@@ -22,6 +22,15 @@ body {
     background-color:chartreuse;
 }
 /* 見出し */
+.textmida {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-top: 2rem;
+  background:#ceff9a;
+  padding: 0.25rem;
+}
 .text-background {
   display: inline-block;
   font-size: 2.5rem;
@@ -95,10 +104,12 @@ h1 {
 }
 
 .card-container {
-  display: flex;
+  display:flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  background-color:#EFEFEF;
+  padding:2rem;
 }
 
 .card {
@@ -144,6 +155,8 @@ h1 {
     grid-template-columns: repeat(3,1fr);
     text-align: center;
     margin-top: 2rem;
+    background-color:#EFEFEF;
+    padding: 2rem;
 }
 .item img {
     aspect-ratio: 1/1;
@@ -157,6 +170,9 @@ h1 {
 }
 .event-name {
   font-size: .875rem;
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #333333;
 }
 .search {
   font-size: 1.5rem;
@@ -225,6 +241,20 @@ h1 {
 }
 /* SNS ---------------------------------------------
 --------------------------------*/
+/* アイコン */
+.circle {
+    background-image: url("images/uma.png");  /* 表示する画像 */
+    width:  50px;       /* ※縦横を同値に */
+    height: 50px;       /* ※縦横を同値に */
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: center center;  /* 横長画像の左上を基準に表示 */
+}
+.migi {
+  text-align: right;
+  margin-top: 4rem;
+}
+
+/* 右の三つのボタン */
 .three-btn {
   text-align: center;/*03-10*/
   position: fixed;
@@ -249,7 +279,7 @@ h1 {
     padding-top: 15px;
     /* transition: .5s; */
     transition: .5s;
-    margin: 20px;
+    margin: 10px;
     width:55px;
     height: 55px;
 }
@@ -258,8 +288,57 @@ h1 {
     /* color: #ff0000; */
     /* scale: 1.2; 縦横拡大する*/
     /* rotate: -5deg; 右斜め上に5度回転*/
-    translate: 10px -12px;
+    /* translate: 10px -12px; */
 }
+
+/* パネルの基本スタイル */
+    .slide-panel {
+      position: fixed;
+      bottom:0;
+      right: -500px; /* 初期状態は画面外に */
+      width: 500px;
+      height: 88%;
+      background-color: #f8f8f8;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+      transition: right 0.3s ease;
+      padding: 20px;
+      border-radius: 15px; /* 角を丸くする */
+      z-index: 9999;/*最前面*/
+    }
+
+    /* 表示状態のクラス */
+    .slide-panel.open {
+      right: 0;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      font-size: 50px;
+    }
+
+/* SNS主画面 */
+.gridsns {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    margin-top: 1rem;
+    background-color:#EFEFEF;
+    padding: 2rem;
+}
+.itemsns img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+    height: 360px;
+    width: 480px;
+}
+.itemsns p {
+    font-size: 1rem;
+}
+
 /* ポイント＆クーポンキャンペーン--------------------------
 ------------------------------------------------------------------------- */
 /* 画像 */
@@ -280,7 +359,7 @@ h1 {
 }
 .gridku {
     display: grid;
-    gap: 2rem 1.5rem;
+    gap:.5rem;
     grid-template-columns: repeat(1,1fr);
     text-align: center;
     margin-top: .5rem;
@@ -306,7 +385,7 @@ h1 {
     /* color: #ff0000; */
     /* scale: 1.2; 縦横拡大する*/
     /* rotate: -5deg; 右斜め上に5度回転*/
-    translate: 10px -12px;
+    /* translate: 10px -12px; */
 }
 .ku-btn {
   text-align: center;/*03-10*/

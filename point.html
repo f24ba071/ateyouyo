@@ -28,22 +28,32 @@
         </ul>
       </nav>
     </header>
-    <p class="text-background">ポイント＆クーポン</p>
+    <p class="textmida">ポイント＆クーポン</p>
 	</div>
   <img class="pointcard" src="images/point.png" alt="">
   <span class="ku-btn">
       <div class="align-center"> <!-- クーポンボタン-->
-        <a class="btnku" href="">クーポン</a>
+        <a class="btnku" onclick="openkupon()">クーポン</a>
       </div>
       <div class="align-center"> <!--キャンペーンボタン-->
-        <a class="btnku" href="">キャンペーン</a>
+        <a class="btnku" onclick="opencan()">キャンペーン</a>
       </div>
   </span>
   <span class="gridku">
-    <img class="QR" src="images/QR.png" alt=""><br>
-    <img class="barcode" src="images/barcode.jpg" alt="">
+      <img class="QR"  src="images/QR.png" ><br>
+      <img class="barcode" src="images/barcode.jpg">
   </span>
   </main>
+  <div id="kupon" class="slide-panel"><!--クーポンシート-->
+    <button class="close-btn" onclick="closekupon()">✖</button>
+    <h2>クーポン</h2>
+    <p>ここにコンテンツが入ります。</p>
+  </div>
+  <div id="can" class="slide-panel"><!--キャンペーンシート-->
+    <button class="close-btn" onclick="closecan()">✖</button>
+    <h2>キャンペーン</h2>
+    <p>ここにコンテンツが入ります。</p>
+  </div>
   <footer>
     <div class="gotop">
       <a href="#top"><img src="images/gotop.svg" alt="ページトップへ戻る"></a>

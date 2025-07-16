@@ -28,21 +28,88 @@
         </ul>
       </nav>
     </header>
-    <p class="text-background">最新投稿</p>
+    <p class="textmida">最新投稿</p>
+    <div class="migi">
+      <img src="images/uma.png" class="circle">
+    </div>
     <span class="three-btn">
-      <div class="align-center"> <!-- 月別ボタン-->
-        <a class="btnsns" href="tukibetu.html" ><img class="icon" src="images/search.png" alt=""></a>
+      <div class="align-center"> <!-- 探すボタン-->
+        <a class="btnsns" onclick="opensearch()"><img class="icon" src="images/search.png" alt=""></a>
       </div>
-      <div class="align-center"> <!--気温情報ボタン-->
-        <a class="btnsns" href=""><img class="icon" src="images/post.png" alt=""></a>
+      <div class="align-center"> <!--投稿ボタン-->
+        <a class="btnsns" onclick="openpost()"><img class="icon" src="images/post.png" alt=""></a>
       </div>
-      <div class="align-center"> <!--気温情報ボタン-->
-        <a class="btnsns" href=""><img class="icon" src="images/favorite.png" alt=""></a>
+      <div class="align-center"> <!--お気に入りボタン-->
+        <a class="btnsns" onclick="openfavo()"><img class="icon" src="images/favorite.png" alt=""></a>
       </div>
     </span>
 	</div>
-  
+  <span class="wrapper gridsns"><!--SNS主画面-->
+    <div class="itemsns">
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #ffff99;">
+        <img src="images/eigajuku.jpg" alt="">
+        <span>
+          <p class="event-name">新潟映画塾制作<br>「新潟市Ｂ区ムービー」無料上映会</p>
+        </span>
+      </div>
+    </div>
+    <div class="itemsns">
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #ffff99;">
+        <img src="images/bijutu.jpg" alt="">
+        <span>
+          <p class="event-name">投稿内容</p>
+        </span>
+      </div>
+    </div>
+    <div class="itemsns">
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #ffff99;">
+        <img src="images/maturi.png" alt="">
+        <span>
+          <p class="event-name">投稿内容</p>
+        </span>
+      </div>
+    </div>
+    <div class="itemsns">
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #ffff99;">
+        <img src="images/senbei.jpg" alt="">
+        <span>
+          <p class="event-name">投稿内容</p>
+        </span>
+      </div>
+    </div>
+    <div class="itemsns">
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #ffff99;">
+        <img src="images/tanboart.jpg" alt="">
+        <span>
+          <p class="event-name">投稿内容</p>
+        </span>
+      </div>
+    </div>
+    <div class="itemsns">
+      <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; background-color: #ffff99;">
+        <img src="images/hashi.jpg" alt="">
+        <span>
+          <p class="event-name">投稿内容</p>
+        </span>
+      </div>
+    </div>
+  </span>
   </main>
+  <div id="search" class="slide-panel"><!--postスライドシート-->
+    <button class="close-btn" onclick="closesearch()">✖</button>
+    <h2>Search</h2>
+    <p>ここにコンテンツが入ります。</p>
+  </div>
+  <div id="post" class="slide-panel"><!--postスライドシート-->
+    <button class="close-btn" onclick="closepost()">✖</button>
+    <h2>Post</h2>
+    <p>ここにコンテンツが入ります。</p>
+  </div>
+  <div id="favo" class="slide-panel"><!--postスライドシート-->
+    <button class="close-btn" onclick="closefavo()">✖</button>
+    <h2>Favorite</h2>
+    <p>ここにコンテンツが入ります。</p>
+  </div>
   <footer>
     <div class="gotop">
       <a href="#top"><img src="images/gotop.svg" alt="ページトップへ戻る"></a>
