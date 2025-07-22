@@ -426,3 +426,28 @@ body{
     z-index: 1;
     bottom: 100px;
 }
+/* クーポンリスト */
+.coupon-list {
+  display: flex;
+  flex-direction: column; /* クーポンを縦に並べる */
+  gap: 15px; /* クーポン間のスペース */
+  padding: 20px;
+}
+
+.coupon-item {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #f0f0f0; /* クーポンの背景色 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.coupon-item:hover {
+  background-color: #e0e0e0; /* ホバー時の色 */
+}

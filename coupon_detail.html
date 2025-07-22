@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>クーポン詳細</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css"> <style>
+    /* このページ専用のスタイル */
+
+    .detail-container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .detail-container h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .detail-images img {
+      width: 80%; /* 画像の幅を調整 */
+      max-width: 300px; /* 最大幅 */
+      height: auto;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .back-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <main class="contents">
+    <div class="detail-container">
+      <h1>クーポンご利用画面</h1>
+      <p>以下のQRコードまたはバーコードを店舗スタッフにご提示ください。</p>
+      <div class="detail-images">
+        <img src="images/QR.png" alt="QRコード">
+        <img src="images/barcode.jpg" alt="バーコード">
+      </div>
+      <a href="point.html" class="back-button">クーポン一覧に戻る</a>
+    </div>
+  </main>
+</body>
+</html>
