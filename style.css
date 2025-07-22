@@ -305,6 +305,7 @@ h1 {
       padding: 20px;
       border-radius: 15px; /* 角を丸くする */
       z-index: 9999;/*最前面*/
+      overflow-y: auto;
     }
 
     /* 表示状態のクラス */
@@ -418,6 +419,26 @@ li {
 }
 .post-twobtn {
   display:flex;
+}
+/* お気に入りページ */
+.favoside {
+  margin-top: 2rem;
+}
+.itemfavo img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 400px;
+}
+.itemsns p {
+    font-size: 1rem;
+}
+.favo img{
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  display:block;
 }
 /* サイドパネル */
 .mida {
