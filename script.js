@@ -1,3 +1,16 @@
+// SNSページ
+// お気に入りボタン
+ const images = document.querySelectorAll(".switchImage");
+
+  images.forEach((img) => {
+    const image1 = "images/sirohart.png";
+    const image2 = "images/favorite.png";
+
+    img.addEventListener("click", () => {
+      img.src = img.src.includes(image1) ? image2 : image1;
+    });
+  });
+
 // search
 function opensearch() {
     document.getElementById('search').classList.add('open');

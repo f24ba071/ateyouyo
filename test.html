@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>画像切り替え</title>
+  <style>
+    img {
+      cursor: pointer;
+      width: 300px; /* 画像サイズを調整 */
+    }
+  </style>
+</head>
+<body>
+
+  <img id="switchImage" src="images/sirohart.png" alt="クリックで画像が変わる">
+
+  <script>
+    const image = document.getElementById("switchImage");
+    const image1 = "images/sirohart.png"; // 初期画像
+    const image2 = "images/favorite.png"; // クリック後の画像
+
+    image.addEventListener("click", () => {
+      // 現在の画像によって切り替え
+      if (image.src.includes(image1)) {
+        image.src = image2;
+      } else {
+        image.src = image1;
+      }
+    });
+  </script>
+
+</body>
+</html>
