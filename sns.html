@@ -104,12 +104,42 @@
   <div id="search" class="slide-panel"><!--postスライドシート-->
     <button class="close-btn" onclick="closesearch()">✖</button>
     <h2>Search</h2>
-    <p>ここにコンテンツが入ります。</p>
+    <p>
+      <input type="text" id="searchInput" placeholder="検索..." style="border: 1px solid #000;"><br>
+      <h2 class="mida">人気ハッシュタグ</h2>
+      <div>
+        <ul id="itemList">
+          <li>＃旅行</li>
+          <li>＃観光</li>
+          <li>＃一人旅</li>
+          <li>＃絶景スポット</li>
+        </ul>
+      </div><br>
+      <h2 class="mida">人気イベント</h2>
+      <div>
+        <ul id="itemList">
+          <li>＃新潟まつり</li>
+          <li>＃水と土の芸術祭</li>
+          <li>＃日本酒蔵見学</li>
+          <li>＃レトロゲーム展</li>
+        </ul>
+      </div><br>
+    </p>
   </div>
   <div id="post" class="slide-panel"><!--postスライドシート-->
     <button class="close-btn" onclick="closepost()">✖</button>
     <h2>Post</h2>
-    <p>ここにコンテンツが入ります。</p>
+    <div class="post-img">
+      <img class="postgazo" src="images/gazobtn.jpg" alt="">
+      <img class="gazohyozi" src="images/gazobtn.jpg" alt="">
+    </div>
+    <p>
+      <input type="text" id="nyuryoInput" placeholder="入力..." style="border: 2px solid #000;"><br>
+      <div class="post-twobtn">
+        <button class="touko" onclick="closepost()">投稿</button>
+        <button class="cancel-btn" onclick="closepost()">Cancel</button>
+      </div>
+    </p>
   </div>
   <div id="favo" class="slide-panel"><!--postスライドシート-->
     <button class="close-btn" onclick="closefavo()">✖</button>
