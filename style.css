@@ -13,6 +13,7 @@ body {
     /* 行の高さ */
     line-height: 1.7;
     color: #432;
+    font-family: sans-serif;
 }
 /* 上のバー */
 .font-english{
@@ -345,7 +346,28 @@ h1 {
   margin-left: auto;
   display:block;
 }
+/* 検索ページ */
+ #searchInput {
+      padding: 8px;
+      width: 300px;
+      font-size: 16px;
+  }
+ ul {
+      display: flex;
+      list-style: none; /* マーカーを消す */
+      padding: 0;
+      flex-wrap: wrap;
+}
 
+li {
+  font-size: 20px;
+  margin-right: 20px; /* 項目の間隔 */
+  margin-top: 20px;
+}
+/* サイドパネル */
+.mida {
+  text-align: left;
+}
 /* ポイント＆クーポンキャンペーン--------------------------
 ------------------------------------------------------------------------- */
 /* 画像 */
