@@ -129,7 +129,17 @@
   <div id="post" class="slide-panel"><!--postスライドシート-->
     <button class="close-btn" onclick="closepost()">✖</button>
     <h2>Post</h2>
-    <p>ここにコンテンツが入ります。</p>
+    <div class="post-img">
+      <img class="postgazo" src="images/gazobtn.jpg" alt="">
+      <img class="gazohyozi" src="images/gazobtn.jpg" alt="">
+    </div>
+    <p>
+      <input type="text" id="nyuryoInput" placeholder="入力..." style="border: 2px solid #000;"><br>
+      <div class="post-twobtn">
+        <button class="touko" onclick="closepost()">投稿</button>
+        <button class="cancel-btn" onclick="closepost()">Cancel</button>
+      </div>
+    </p>
   </div>
   <div id="favo" class="slide-panel"><!--postスライドシート-->
     <button class="close-btn" onclick="closefavo()">✖</button>
