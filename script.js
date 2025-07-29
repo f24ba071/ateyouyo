@@ -53,6 +53,8 @@ function opencan() {
 function closecan() {
     document.getElementById('can').classList.remove('open');
 }
+
+// クーポンQRコードを表示機能
 document.addEventListener('DOMContentLoaded', function() {
   const couponItems = document.querySelectorAll('.coupon-item');
 
@@ -61,6 +63,23 @@ document.addEventListener('DOMContentLoaded', function() {
       // クーポン詳細ページへ遷移
       // window.location.href は、指定したURLに現在のページをリダイレクトします。
       window.location.href = 'coupon_detail.html';
+
+      // もし特定のクーポン情報を渡したい場合は、以下のようにURLパラメータを追加できます
+      // const couponName = this.textContent; // クリックされたクーポンのテキストを取得
+      // window.location.href = 'coupon_detail.html?coupon=' + encodeURIComponent(couponName);
+    });
+  });
+});
+
+// キャンペーンページに飛ぶ機能
+document.addEventListener('DOMContentLoaded', function() {
+  const couponItems = document.querySelectorAll('.can-item');
+
+  couponItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // クーポン詳細ページへ遷移
+      // window.location.href は、指定したURLに現在のページをリダイレクトします。
+      window.location.href = 'event.html#can';
 
       // もし特定のクーポン情報を渡したい場合は、以下のようにURLパラメータを追加できます
       // const couponName = this.textContent; // クリックされたクーポンのテキストを取得

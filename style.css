@@ -19,7 +19,6 @@ body {
 .font-english{
     /* フォント：フィロソファー */
     font-family: "Philosopher",sans-serif;
-    font-weight: bold;
     background-color:chartreuse;
 }
 /* 見出し */
@@ -78,7 +77,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
-    font-size: 2rem;
+    font-size: 100px;
+    font-weight:bold;
     list-style: none;
 }
 .main-nav a {
@@ -525,14 +525,14 @@ body{
     bottom: 100px;
 }
 /* クーポンリスト */
-.coupon-list {
+.coupon-list,.can-list {
   display: flex;
   flex-direction: column; /* クーポンを縦に並べる */
   gap: 15px; /* クーポン間のスペース */
   padding: 20px;
 }
 
-.coupon-item {
+.coupon-item,.can-item {
   width: 100%;
   padding: 15px 20px;
   background-color: #f0f0f0; /* クーポンの背景色 */
@@ -546,6 +546,6 @@ body{
   transition: background-color 0.3s ease;
 }
 
-.coupon-item:hover {
+.coupon-item:hover,.can-item:hover {
   background-color: #e0e0e0; /* ホバー時の色 */
 }
